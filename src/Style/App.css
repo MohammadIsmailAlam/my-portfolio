@@ -1,3 +1,11 @@
+@import "contact.css";
+@import "experience.css";
+@import "footer.css";
+@import "header.css";
+@import "intro.css";
+@import "portfolio.css";
+@import "topbar.css";
+
 .App {
   text-align: center;
 }
