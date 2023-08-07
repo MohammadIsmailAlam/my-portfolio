@@ -18,7 +18,7 @@
     justify-content: center;
     border-radius: 50%;
     background-color: var(--color-highlight);
-    transition: opacity .25s,transform .25s;
+    transition: opacity .25s, transform .25s;
     transition-delay: 0s;
     transition-timing-function: ease;
     opacity: 0;
@@ -44,7 +44,7 @@
     justify-content: center;
     border-radius: 50%;
     background-color: var(--color-highlight);
-    transition: opacity .25s,transform .25s;
+    transition: opacity .25s, transform .25s;
     transition-delay: 0s;
     transition-timing-function: ease;
     opacity: 0;
@@ -58,15 +58,36 @@
 
 @media (min-width: 1440px) {
     .v-cursor {
-        width:120px;
+        width: 120px;
         height: 120px
     }
 }
 
 @media (max-width: 1439px) {
     .v-cursor {
-        width:100px;
+        width: 100px;
         height: 100px
     }
 }
 
+@keyframes rainbow-cursor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.rainbow:hover {
+    animation: rainbow-cursor 5s linear infinite;
+}
+
+.no-cursor-style {
+    filter: none !important;
+}
+
+.no-cursor-style:hover {
+    animation:  none !important;
+}

@@ -1,8 +1,7 @@
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
-import img from '../../src/assets/ismail (2).jpeg'
-
+import img from "../../src/assets/ismail (2).jpeg";
 
 const Intro = () => {
   return (
@@ -11,11 +10,11 @@ const Intro = () => {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <div className="about__me-image">
+          <div className="about__me-image no-cursor-style">
             <img src={img} alt="Mohammad Ismail Alam" />
           </div>
         </div>
-        <div className="about__content">
+        <div className="about__content rainbow">
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
@@ -31,17 +30,19 @@ const Intro = () => {
               <VscFolderLibrary className="about__icon" />
               <h5>Running Project</h5>
               <span>Hostal Package Management.</span>
-              <h5 style={{color: "var(--color-light)"}}>A online booking system.</h5>
+              <h5 style={{ color: "var(--color-light)" }}>
+                A online booking system.
+              </h5>
             </article>
           </div>
           <p>
             8 months experienced Front End Developer with hands-on experience in
             identifying web-based user interactions along with designing and
             implementing highly-responsive user interface components by
-            deploying React concepts. Proficient in writing application interface
-            code via React JS and JavaScript workflows. Adept at monitoring and
-            maintaining frontend performance and troubleshooting and debugging
-            the same to bolster overall performance.
+            deploying React concepts. Proficient in writing application
+            interface code via React JS and JavaScript workflows. Adept at
+            monitoring and maintaining frontend performance and troubleshooting
+            and debugging the same to bolster overall performance.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

@@ -47,10 +47,21 @@ const ExtraWork = () => {
 
   return (
     <section id="portfolio">
-<div className="dropdown-button" onClick={handleDropdownClick}>
-        <h2 style={{ display: "flex", justifyContent: "center", alignItems: "center", color: "#4db5ff" }}>
+      <div className="dropdown-button" onClick={handleDropdownClick}>
+        <h2
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#4db5ff",
+          }}
+        >
           Extra
-          <IconButton style={{color: "#4db5ff"}} aria-label="dropdown" size="small">
+          <IconButton
+            style={{ color: "#4db5ff" }}
+            aria-label="dropdown"
+            size="small"
+          >
             <Icon>
               <ExpandMoreIcon />
             </Icon>
@@ -60,7 +71,7 @@ const ExtraWork = () => {
       {showProjects && (
         <>
           <h2>Given Coding tests in few company's</h2>
-          <div className="container portfolio__container">
+          <div className="container portfolio__container rainbow">
             {soloProjects.map((pro) => (
               <article className="portfolio__item" key={pro.id}>
                 <div className="portfolio__item-image">

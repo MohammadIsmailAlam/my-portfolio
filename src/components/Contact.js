@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-
 import { MdOutlineEmail } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
 
@@ -35,7 +34,7 @@ const Contact = () => {
         provided :)
       </h5>
       <h2>Contact Me</h2>
-      <div className="container contact__container">
+      <div className="container contact__container rainbow">
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
