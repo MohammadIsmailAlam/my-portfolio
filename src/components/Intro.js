@@ -1,7 +1,7 @@
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
-import img from '../../src/assets/WhatsApp Image 2023-03-04 at 7.46.38 PM.jpeg'
+import img from '../../src/assets/ismail (2).jpeg'
 
 
 const Intro = () => {
@@ -25,17 +25,17 @@ const Intro = () => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>5+ Completed Projects</small>
+              <small>9+ Completed Projects</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Running Project</h5>
-              <span>Khuda-Lagse</span>
-              <h5 style={{color: "var(--color-light)"}}>A Treat Management System</h5>
+              <span>Hostal Package Management.</span>
+              <h5 style={{color: "var(--color-light)"}}>A online booking system.</h5>
             </article>
           </div>
           <p>
-            7+ months experienced Front End Developer with hands-on experience in
+            8 months experienced Front End Developer with hands-on experience in
             identifying web-based user interactions along with designing and
             implementing highly-responsive user interface components by
             deploying React concepts. Proficient in writing application interface

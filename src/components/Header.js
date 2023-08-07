@@ -9,6 +9,7 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Mohammad Ismail Alam</h1>
         <h5 className="text-light">Front-end Developer</h5>
+        <h5 className="text-light">React JS</h5>
         <CTA />
         <a href="#contact" className="scroll__down">
           Scroll Down

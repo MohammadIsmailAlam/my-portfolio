@@ -2,7 +2,7 @@ import React from "react";
 import IMG1 from "../../src/assets/khuda-lagse.png";
 import IMG2 from "../../src/assets/Feedback.png";
 import IMG3 from "../../src/assets/snake.png";
-// import IMG4 from "../../assets/Covid-19 Project.jpg";
+import IMG4 from "../../src/assets/my-todo.png";
 // import IMG5 from "../../assets/Jokes Project.jpg";
 // import IMG6 from "../../assets/Project4.jpg";
 
@@ -40,12 +40,12 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Blog Project",
-    //   img: IMG3,
-      description: "Create a blog, Store your data",
-      technologies: "React",
-      link: "",
-      github: "https://github.com/MohammadIsmailAlam/react-app",
+      title: "My TO-DO List",
+      img: IMG4,
+      description: "Create a to-do, Store your data, Remember your tasks",
+      technologies: "JavaScript",
+      link: "https://my-todo-app-list.vercel.app/",
+      github: "https://github.com/MohammadIsmailAlam/my-todo-app",
     },
   ];
 

@@ -5,6 +5,7 @@
 @import "intro.css";
 @import "portfolio.css";
 @import "topbar.css";
+@import "Cursor.css";
 
 .App {
   text-align: center;
