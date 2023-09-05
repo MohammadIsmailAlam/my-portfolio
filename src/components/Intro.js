@@ -28,10 +28,10 @@ const Intro = () => {
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Running Project</h5>
-              <span>Hostal Package Management.</span>
+              <h5>Recent Project</h5>
+              <span>Gadget Labge</span>
               <h5 style={{ color: "var(--color-light)" }}>
-                A online booking system.
+                An Ecommerce Website
               </h5>
             </article>
           </div>

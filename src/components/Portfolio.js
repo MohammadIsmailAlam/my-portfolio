@@ -1,17 +1,15 @@
 import React from "react";
 import IMG1 from "../../src/assets/khuda-lagse.png";
-import IMG2 from "../../src/assets/Feedback.png";
-import IMG3 from "../../src/assets/snake.png";
+import IMG2 from "../../src/assets/Gadget_lagbe.png";
+import IMG3 from "../../src/assets/Feedback.png";
 import IMG4 from "../../src/assets/my-todo.png";
-// import IMG5 from "../../assets/Jokes Project.jpg";
-// import IMG6 from "../../assets/Project4.jpg";
 
 //Portfolio function
 const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Khuda-lagse with React.js",
+      title: "Khuda-lagse",
       img: IMG1,
       description:
         "An treat given website is a huge interactive platform to present various treats for people.",
@@ -21,22 +19,23 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "FeedBack Plot App",
+      title: "Gadget Lagbe",
       img: IMG2,
+      description:
+        "An innovative e-commerce website for gadgets, offering a wide range of cutting-edge products and an intuitive shopping experience.",
+      technologies: "React Js | Tailwind CSS | React-Router-Dom | React Icons",
+      link: "https://gadget-lagbe.vercel.app/",
+      github: "https://github.com/MohammadIsmailAlam/Ecommerec-Shoping-Website",
+    },
+    {
+      id: 3,
+      title: "FeedBack Plot App",
+      img: IMG3,
       description:
         "This site is a kind of social media platform. You can collect feedbacks and share your feedback.",
       technologies: "React | Redux",
       link: "https://react-redux-project-sage.vercel.app/",
       github: "https://github.com/MohammadIsmailAlam/react-redux-project",
-    },
-    {
-      id: 3,
-      title: "Snake Game",
-      img: IMG3,
-      description: "",
-      technologies: "React",
-      link: "https://snake-game-silk-zeta.vercel.app/",
-      github: "https://github.com/MohammadIsmailAlam/Snake-Game",
     },
     {
       id: 4,
