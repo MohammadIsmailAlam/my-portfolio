@@ -20,6 +20,9 @@ const Intro = () => {
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>8 month Inter at Kona SL</small>
+              <br />
+              <br />
+              <small>Associate Software Engineer at Dot BD Soluation</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -43,6 +46,10 @@ const Intro = () => {
             interface code via React JS and JavaScript workflows. Adept at
             monitoring and maintaining frontend performance and troubleshooting
             and debugging the same to bolster overall performance.
+          </p>
+          <p>
+            At the time in Dot BD Soluation i have Prepared User Requirement Specification documentation, UI design
+            and implementation using Nextjs with Tailwind CSS.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
