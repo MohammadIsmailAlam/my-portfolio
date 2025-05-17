@@ -1,38 +1,46 @@
-import React, { useRef, useState } from 'react';
-import { MdOutlineEmail } from 'react-icons/md';
-import emailjs from '@emailjs/browser';
-
+import { useRef, useState } from "react";
+import { MdOutlineEmail } from "react-icons/md";
+import emailjs from "@emailjs/browser";
+import "../Style/contact.css";
 const Contact = () => {
-  const [message, setMessage] = useState(false);
   const formRef = useRef();
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true);
+    setStatus("Sending...");
+
     emailjs
       .sendForm(
-        'service_oe9dncn',
-        'template_nra8fgx',
+        "service_oe9dncn",
+        "template_nra8fgx",
         formRef.current,
-        '0jUxZHpI2HDpq7GM2'
+        "0jUxZHpI2HDpq7GM2"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setMessage("Thanks! I'll reply ASAP 😊");
+          setStatus("");
+          e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
+          setMessage("Something went wrong. Please try again later.");
+          setStatus("");
         }
       );
-
-    e.target.reset();
   };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
-      <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :)
-      </h5>
+      <p style={{ textAlign: "center" }}>
+        I do receive your messages and will respond ASAP if a valid email is
+        provided 🙂
+      </p>
+
       <h2>Contact Me</h2>
       <div className="container contact__container rainbow">
         <div className="contact__options">
@@ -40,7 +48,13 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>ismailalam901@gmail.com</h5>
-            <span>Send a message</span>
+            <a
+              href="mailto:ismailalam901@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
@@ -51,7 +65,7 @@ const Contact = () => {
             required
           />
           <input
-            type="text"
+            type="email"
             placeholder="Your Email"
             name="user_email"
             required
@@ -63,9 +77,9 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {status || "Send Message"}
           </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span className="message-status">{message}</span>}
         </form>
       </div>
     </section>
